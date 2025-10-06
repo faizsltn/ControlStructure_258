@@ -13,7 +13,6 @@ else :
 
 
 print("find largest of three numbers!")
-
 number1 = int(input("masukkan angka pertama:"))
 number2 = int(input("masukkan angka kedua:"))
 number3 = int(input("masukkan angka ketiga:"))
@@ -28,4 +27,28 @@ else :
 print("\nhasil perhitungan")
 print(f"dari numbers {number1}, {number2}, and {number3},")
 print(f"angka yang terbesar adalah : {largest}")
+
+print("print Fibonacci series up to n!")
+n = int(input("Masukkan jumlah suku: "))
+angkapertama = 0
+angkakedua = 1
+suku_ke = 0
+
+if n <= 0:
+    print(f"masukkan angka.")
+elif n == 1:
+    print(f"fibonacci hingga suku ke-{n}:")
+    print(angkapertama)
+
+else :
+    print(f"fibonacci hingga suku ke-{n}:")
+
+    while suku_ke < n:
+        print(angkapertama, end='')
+        suku_berikutnya = angkapertama + angkakedua
+        angkapertama = angkakedua
+        angkakedua = suku_berikutnya
+
+        suku_ke += 1
+        print()
 
