@@ -52,3 +52,14 @@ else :
         suku_ke += 1
         print()
 
+
+print("print odd numbers up to n!")
+n = int(input("Masukkan sebuah angka batas (n): "))
+
+if n <= 0:
+        print("masukkan angka yang lebih besar.")
+else:
+        print(f"\nbilangan ganjil dari 1 hingga {n}:")
+        for angka in range(1, n + 1, 2):
+             print(angka, end=' ')
+        print()
