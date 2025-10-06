@@ -63,3 +63,14 @@ else:
         for angka in range(1, n + 1, 2):
              print(angka, end=' ')
         print()
+
+
+print("produce following design")
+n = int(input("Masukkan jumlah baris (n): "))
+if n <= 0:
+        print("Harap masukkan angka yang lebih besar dari 0.")
+else:
+    for baris in range(1, n + 1):
+        for kolom in range(baris):
+               print(baris, end=" ")
+        print()
